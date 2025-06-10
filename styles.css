@@ -166,6 +166,7 @@ section {
     display: flex;
     flex-direction: column;
     min-height: 550px;
+    justify-content: space-between;
 }
 
 .product-card:hover {
@@ -365,30 +366,40 @@ footer p {
     
     .product-card {
         height: auto;
-        padding: 2rem 1rem 8rem;
+        padding: 2rem 1rem;
         margin-bottom: 2.5rem;
         overflow: visible;
         min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     
     .product-card p {
         min-height: auto;
         display: block;
+        margin-bottom: 2rem;
+    }
+    
+    .product-icon, .product-card h3, .product-card p {
+        flex: 0 0 auto;
     }
     
     .product-image {
-        position: absolute;
-        bottom: 1rem;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+        position: static;
+        margin-top: 1rem;
+        padding-top: 1.5rem;
         height: auto;
-        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
     }
     
     .phone-mockup {
-        max-height: 220px;
+        max-height: 180px;
         width: auto;
+        display: block;
     }
     
     nav ul {
