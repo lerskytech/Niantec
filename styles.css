@@ -163,6 +163,8 @@ section {
     overflow: hidden;
     border: 1px solid rgba(181, 55, 242, 0.2);
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card:hover {
@@ -189,22 +191,25 @@ section {
     text-align: center;
 }
 
+.product-card .product-icon, .product-card h3, .product-card p {
+    flex: 0 0 auto;
+}
+
 .product-image {
-    margin-top: 2rem;
+    margin-top: auto;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
+    flex: 1;
+    align-items: flex-end;
 }
 
 .phone-mockup {
     max-height: 300px;
-    position: relative;
-    top: 0;
+    width: auto;
 }
 
-/* Custom adjustment for SleepyMon image */
-.sleepymon-image {
-    margin-top: 3.5rem; /* Increased margin to push image down */
-}
+/* We don't need the custom adjustment anymore */
 
 /* Team section */
 .team {
