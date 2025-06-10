@@ -190,10 +190,14 @@ section {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+    height: 320px; /* Fixed height for consistency */
+    align-items: center; /* Center vertically */
 }
 
 .phone-mockup {
-    max-height: 300px;
+    height: 300px; /* Fixed height instead of max-height */
+    width: auto;
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
 /* Team section */
