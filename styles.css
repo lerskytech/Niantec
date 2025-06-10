@@ -196,10 +196,20 @@ section {
     flex: 0 0 auto;
 }
 
+/* Make sure all product cards have uniform content height */
+.product-card p {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product-image {
-    margin-top: 2rem;
+    margin-top: auto;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .phone-mockup {
@@ -361,6 +371,11 @@ footer p {
         min-height: auto;
     }
     
+    .product-card p {
+        min-height: auto;
+        display: block;
+    }
+    
     .product-image {
         position: absolute;
         bottom: 1rem;
@@ -368,6 +383,7 @@ footer p {
         right: 0;
         margin: 0 auto;
         height: auto;
+        padding-top: 0;
     }
     
     .phone-mockup {
