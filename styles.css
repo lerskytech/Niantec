@@ -160,9 +160,12 @@ section {
     box-shadow: 0 4px 15px rgba(0, 243, 255, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     border: 1px solid rgba(181, 55, 242, 0.2);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 550px;
 }
 
 .product-card:hover {
@@ -193,11 +196,15 @@ section {
     flex: 0 0 auto;
 }
 
+.product-image {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
 .phone-mockup {
     max-height: 300px;
     width: auto;
-    display: block;
-    margin: 2rem auto 0;
 }
 
 /* We don't need the custom adjustment anymore */
@@ -348,19 +355,24 @@ footer p {
     
     .product-card {
         height: auto;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 8rem;
         margin-bottom: 2.5rem;
+        overflow: visible;
+        min-height: auto;
     }
     
-    .product-card p {
-        margin-bottom: 1.5rem;
+    .product-image {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: auto;
     }
     
     .phone-mockup {
         max-height: 220px;
         width: auto;
-        margin: 1rem auto;
-        display: block;
     }
     
     nav ul {
