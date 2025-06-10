@@ -12,7 +12,7 @@ A satirical, single-page website for "Niantec," a parody AR company with a playf
    - `Niantec5.png` - Landscape press/news headline image
 
 2. Open `index.html` in your web browser to view the site.
-
+ 
 ## Features
 
 - Modern dark theme with neon accents
