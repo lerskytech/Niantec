@@ -198,6 +198,11 @@ section {
     top: 0;
 }
 
+/* Custom adjustment for SleepyMon image */
+.sleepymon-image {
+    margin-top: 3.5rem; /* Increased margin to push image down */
+}
+
 /* Team section */
 .team {
     background: var(--darker-bg);
